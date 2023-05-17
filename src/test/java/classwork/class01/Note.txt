@@ -1,0 +1,76 @@
+
+get() vs navigate()
+-- navigate can move back, forward and refresh
+-- get() will wait for the page to fully load whereas navigate() will not
+-- get() will not keep the history of the browser whereas navigate() will
+
+close() vs quit()
+-- close() will close the current tab
+-- quit() will quit the whole browser
+
+fullscreen() vs maximize()
+-- maximize() will maximize the browser and you will still be able to see url, tabs, bookmarks
+    and fullscreen() will maximize the whole web application
+
+
+    What is a WebElement?
+    anything we see on the web page is considered to be a webElement
+    e.g. buttons, textBoxes, checkboxes, links
+
+    HTML?
+    HyperText Markup Language
+
+    What is DOM?
+    DOM stands for Document Object Model. It is the browser's
+    internal view of the webpage.
+    Also called as Developer's tools, or Dev tools
+    Document --> can be stored any document as pdf, excel
+    Object --> any line in HTML is considered as Object
+    Model --> it is just a layout of the HTML
+
+    Locator
+    -> is an address or a position of an webElement on the web page
+    -> is used to locate or identify webElements on the webpage
+
+    8 Locators:
+    - ID
+    - Name
+    - TagName
+    - xpath
+    - linkText
+    - partialLinkText
+    - CSS Selector
+    - ClassName
+
+
+    Why do we need many locators?
+    -- some locators might have duplicate values in other nodes
+    -- Developers may not provide all the locators for all the elements
+    -- some locators may not be applicable for the elements we are looking for
+        e.g. linkText and partialLinkText is only used for Links
+
+
+    there are some important things that you should remember while selecting a locator...
+
+    !!!!! if a attribute value has a number in it , it is better to avoid it and use an alternative locator.!!!!!
+
+----------------------------------------------------------------------------------------------------------------------
+In HTML, the term "node" refers to an element or a part of the HTML document's structure. HTML documents are
+structured using a hierarchical tree-like structure called the Document Object Model (DOM), where each element
+is represented as a node in the tree.
+
+There are different types of nodes in the DOM:
+
+Element nodes: These represent HTML elements, such as <div>, <p>, <h1>, and so on. Element nodes can have child nodes,
+which are the elements contained within them.
+
+Text nodes: These represent the actual text content within an element. For example, if you have a paragraph element
+<p>Hello, world!</p>, the text "Hello, world!" would be represented as a text node.
+
+Attribute nodes: These represent the attributes of an element, such as id, class, src, and so on.
+
+Comment nodes: These represent comments within the HTML code. Comments are not visible on the rendered page but can
+be used to add notes or explanations within the HTML code.
+
+Nodes in the DOM can be accessed, manipulated, and traversed using JavaScript. For example, you can use JavaScript to
+find a specific element node, modify its content, add or remove nodes from the DOM, and more.
