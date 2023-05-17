@@ -9,7 +9,8 @@ public class SigningUp {
     public static void main(String[] args) throws InterruptedException {
         //creating the instance
         WebDriver driver = new ChromeDriver();
-        //navigating to the web page
+
+        //navigating to the web page to sign up
         driver.get("https://parabank.parasoft.com/parabank/register.htm;jsessionid=B8DD31FF0AFEDBDF4454B27BBC5C05B0%22");
 
         //finding the tagName by ids & filling up the form
@@ -30,6 +31,7 @@ public class SigningUp {
 
         //slowing down the execution
         Thread.sleep(2000);
+
         //getting the web page tittle and verifying it.
         String title = driver.getTitle();
         System.out.println("The current web page title is : " + title);
