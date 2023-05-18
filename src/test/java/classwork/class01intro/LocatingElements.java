@@ -1,4 +1,4 @@
-package classwork.class01;
+package classwork.class01intro;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -6,6 +6,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class LocatingElements {
     public static void main(String[] args) throws InterruptedException {
+        /**
+         * EVERY ELEMENT IN THE WEB-PAGE HAS AN UNDERLINE CODE ASSOCIATED WITH IT.
+         */
         //instance
         WebDriver driver = new ChromeDriver();
 
@@ -13,9 +16,10 @@ public class LocatingElements {
         driver.get("https://www.facebook.com/");
         driver.manage().window().maximize();
 
-        //send some text to the text field
+        //send some text to the textBox
         // find the TAGNAME & ATTRIBUTE
-        //<-find the webElement by id->     . <- send some text->
+        //hey WebDriver find webElement tagName input which has an id of email and send some text
+ //finding webElement input by id="email" . sending some text
         driver.findElement(By.id("email")).sendKeys("abc@gmail.com");
         Thread.sleep(1000);
 
@@ -32,6 +36,7 @@ public class LocatingElements {
         String title = driver.getTitle();
         System.out.println("title = " + title);
 
+        //confirm that the tittle is "Facebook - log in or sign up"
         if (title.equalsIgnoreCase("Facebook - log in or sign up")) {
             System.out.println("Title is correct");
         } else {

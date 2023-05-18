@@ -1,4 +1,4 @@
-package classwork.class01;
+package classwork.class01intro;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -13,6 +13,7 @@ public class NavigateCommand {
         driver.get("https://google.com");
 
         //slow down => to be able to see the whole process ->  Thread.sleep(3000);
+        // waits here on L17 for 5sec before it executes the next line of the code
         Thread.sleep(2000);
 
         //navigate to facebook

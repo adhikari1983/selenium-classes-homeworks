@@ -9,7 +9,7 @@ close() vs quit()
 -- quit() will quit the whole browser
 
 fullscreen() vs maximize()
--- maximize() will maximize the browser and you will still be able to see url, tabs, bookmarks
+-- maximize() will maximize the browser, and you will still be able to see url, tabs, bookmarks
     and fullscreen() will maximize the whole web application
 
 
