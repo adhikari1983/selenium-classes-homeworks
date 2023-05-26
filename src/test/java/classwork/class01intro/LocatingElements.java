@@ -7,6 +7,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class LocatingElements {
     public static void main(String[] args) throws InterruptedException {
         /**
+         * A web element refers to an individual component or element that can be found on a web page.
+         * i.e. anything that we see on the html page is a Web-Element.
          * EVERY ELEMENT IN THE WEB-PAGE HAS AN UNDERLINE CODE ASSOCIATED WITH IT.
          */
         //instance

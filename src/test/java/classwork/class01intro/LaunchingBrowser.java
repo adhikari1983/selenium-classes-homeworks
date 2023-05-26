@@ -7,11 +7,12 @@ public class LaunchingBrowser {
     public static void main(String[] args) throws InterruptedException {
  /**
   * task:
-  * navigate to google.com                *********** FRONT END TESTING IS TESTING THE USER INTERFACE ***********
+  * navigate to google.com        *********** FRONT END TESTING IS TESTING THE USER INTERFACE ***********
   */
-            /* Regression testing -> testing the whole application again after updating/adding a new feature to the application
-            //Basically that means testing the application continuously..... coz -> updating/adding a new feature to the application
-                                                                                happens all the time. */
+ /** Regression testing -> testing the whole application again after updating/adding a new feature to the application
+  Basically that means testing the application continuously coz -> updating/adding a new feature to the application
+                                                                   happens all the time.
+  */
         // declare the instance
         WebDriver driver = new ChromeDriver();
 

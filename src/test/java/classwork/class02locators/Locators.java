@@ -5,10 +5,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-//"http://hrm.syntaxtechs.net/humanresources/symfony/web/index.php/dashboard"
+import java.util.List;
+
 public class Locators {
     public static void main(String[] args) throws InterruptedException {
-        //declare tge instance
+        //declare the instance
         WebDriver driver = new ChromeDriver();
 
         //navigate to the HRMS
@@ -48,6 +49,13 @@ public class Locators {
         System.out.println("get welcome message text = " + text);
 
         driver.findElement(By.partialLinkText("Recru")).click();
+
+        List<WebElement> aTags = driver.findElements(By.tagName("a"));
+
+        for (WebElement aTag : aTags) {
+            String webLink = aTag.getAttribute("href");
+            System.out.println(webLink);
+        }
 
     }
 }

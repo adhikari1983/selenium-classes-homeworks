@@ -8,13 +8,14 @@ close() vs quit()
 -- close() will close the current tab
 -- quit() will quit the whole browser
 
-fullscreen() vs maximize()
+maximize() Vs fullscreen()
 -- maximize() will maximize the browser, and you will still be able to see url, tabs, bookmarks
-    and fullscreen() will maximize the whole web application
+-- fullscreen() will maximize the whole web application, but you will not be able to see url, tabs, bookmarks
+
 
 
     What is a WebElement?
-    anything we see on the web page is considered to be a webElement
+    -- anything we see on the web page is considered to be a webElement
     e.g. buttons, textBoxes, checkboxes, links
 
     HTML?
@@ -52,7 +53,7 @@ fullscreen() vs maximize()
 
     there are some important things that you should remember while selecting a locator...
 
-    !!!!! if a attribute value has a number in it , it is better to avoid it and use an alternative locator.!!!!!
+    !!!!! If an attribute value has a number in it, it is better to avoid it and use an alternative locator.!!!!!
 
 ----------------------------------------------------------------------------------------------------------------------
 In HTML, the term "node" refers to an element or a part of the HTML document's structure. HTML documents are
