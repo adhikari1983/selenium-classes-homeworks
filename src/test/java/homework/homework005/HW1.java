@@ -26,5 +26,6 @@ public class HW1 extends CommonMethods {
         promptAlert.sendKeys("Kiran Adhikari");
         Thread.sleep(2000);
         promptAlert.accept();
+
     }
 }

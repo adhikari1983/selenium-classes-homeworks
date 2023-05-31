@@ -44,6 +44,7 @@ public class HW2 extends CommonMethods {
         WebElement textBox=driver.findElement(By.xpath("//input"));
         textBox.sendKeys("Some testing text");
 
+
         Thread.sleep(3000);
         driver.quit();
 
