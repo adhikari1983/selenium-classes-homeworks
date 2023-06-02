@@ -23,7 +23,7 @@ a parital link text you can use just a part of text, just make sure that it is u
 
 -----WebElement Commands---
 .clear()
-.sendkeys()
+.sendKeys()
 .getAttribute()
 .getText()
 -------------------
@@ -80,7 +80,7 @@ a parital link text you can use just a part of text, just make sure that it is u
 
 								translation :
 
-								get me the tag name which has an attibute whose value contains "partial value of the attribute"
+								get me the tag name which has an attribute whose value contains "partial value of the attribute"
 
 
                                       ******Example**********

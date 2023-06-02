@@ -1,3 +1,8 @@
+/*
+HW1:
+goto   http://practice.syntaxtechs.net/basic-select-dropdown-demo.php
+select , tuesday, thursday and friday one by one
+ */
 package homework.homework004;
 
 import classwork.utils.CommonMethods;
@@ -14,13 +19,14 @@ public class HW1SelectDays extends CommonMethods {
         WebElement days = driver.findElement(By.xpath("//select[@id='select-demo']"));
         Select selectDay = new Select(days);
 
-        Thread.sleep(2000);
+
         selectDay.selectByVisibleText("Tuesday");
-        Thread.sleep(2000);
+
         selectDay.selectByIndex(5);
-        Thread.sleep(2000);
+
         selectDay.selectByValue("Friday");
 
+        Thread.sleep(2000);
         closeBrowser();
 
     }

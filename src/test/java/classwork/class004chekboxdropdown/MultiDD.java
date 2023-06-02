@@ -1,4 +1,4 @@
-package classwork.class004;
+package classwork.class004chekboxdropdown;
 
 import classwork.utils.CommonMethods;
 import org.openqa.selenium.By;

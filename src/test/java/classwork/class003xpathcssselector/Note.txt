@@ -29,16 +29,16 @@ Xpath:
 
 
  Notes:
-     1.if u are unable to write down the unqiue xpath (no matter u tried to use various avialable xpath)
+     1.if you're unable to write down the unique xpath (no matter u tried to use various available xpath)
      then u can use
         Indexing to select your desired one
 
         	*  (//tagname[@attribute='value'])[index Number]    ---> Index number starts with 1
 
-     2.  use the contains or strats with only when
-          1. the text or attribute is  containing a dynamic  part  and u are left with no other option
+     2.  use the contains or starts with only when
+          1. the text or attribute is  containing a dynamic  part, and you're left with no other option
 
-          2. the text or attribute is long enough (and you are sure that it will always remian unique)
+          2. the text or attribute is long enough (and you are sure that it will always remain unique)
 
 
 
@@ -52,7 +52,7 @@ Syntax:
 
            tagname[attribute = 'attribute value']
 
-limitation : u cant use >text< with CSS selector
+limitation : u can't use >text< with CSS selector
 
 
 Shortcuts are there in CSS selector that can be used to locate an element
@@ -80,6 +80,6 @@ e. we have a ends with methods also in CSS
 
 
 FOCUS SHOULD BE ON :
-					 wiriting the locator that gets us the unqiue value
+					 writing the locator that gets us the unique value
 					 also we should make sure at our end that the future changes
-					 will most probably not effect our xpath (try your best in this)
+					 will most probably not affect our xpath (try your best in this)

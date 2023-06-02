@@ -1,4 +1,4 @@
-package classwork.class003xpath;
+package classwork.class003xpathcssselector;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

@@ -31,6 +31,11 @@ public class HW1 extends CommonMethods {
         WebElement display = driver.findElement(By.xpath("//h4[text()='Welcome Syntax Technologies']"));
         wait.until(ExpectedConditions.visibilityOf(display));
 
+        /**wait for the condition BY VISIBILITY
+        WebElement element = driver.findElement(By.xpath("//h4[text()='Welcome Syntax Technologies']"));
+        wait.until(ExpectedConditions.visibilityOf(element));*/
+
+
         // find the display "Welcome Syntax Technologies" & get text
         WebElement welcomeDisplay = driver.findElement(By.xpath("//h4[text()='Welcome Syntax Technologies']"));
         String text = welcomeDisplay.getText();

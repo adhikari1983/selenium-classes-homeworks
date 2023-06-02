@@ -1,3 +1,15 @@
+/*
+HW1:
+navigate to https://parabank.parasoft.com/parabank/register.htm;jsessionid=B8DD31FF0AFEDBDF4454B27BBC5C05B0%22
+fill out the form
+close the browser
+Note: use name or id as locators
+HW2:
+navigate to "http://secure.smartbearsoftware.com/samples/testcomplete11/WebOrders/login.aspx"
+enter the username "Tester"
+enter the password "test"
+get the title of the webPage and confirm that it is  "Web Orders Login"
+ */
 package homework.homework001;
 
 import org.openqa.selenium.By;

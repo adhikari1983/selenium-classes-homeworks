@@ -21,7 +21,7 @@ public class LocatingElements {
         //send some text to the textBox
         // find the TAGNAME & ATTRIBUTE
         //hey WebDriver find webElement tagName input which has an id of email and send some text
- //finding webElement input by id="email" . sending some text
+       //finding webElement input by id="email" . sending some text
         driver.findElement(By.id("email")).sendKeys("abc@gmail.com");
         Thread.sleep(1000);
 
