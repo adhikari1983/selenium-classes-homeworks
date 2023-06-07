@@ -1,4 +1,4 @@
-package classwork.class005;
+package classwork.class005alertsframe;
 
 import homework.utils.CommonMethods;
 import org.openqa.selenium.Alert;

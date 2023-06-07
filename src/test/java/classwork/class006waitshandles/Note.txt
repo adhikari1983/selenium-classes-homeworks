@@ -1,0 +1,42 @@
+Implicit:
+        is going to  wait until the web element is found.
+(element is not present in the DOM at the time of the execution flow of the script)
+-> we can add it after creating the driver instance
+-> declare once after getting the url and available for all the elements throughout the application
+ ADVANTAGES:
+ - it is very easy to use & we can add it only once
+ DISADVANTAGE:
+ - static typing (if the time is taking more than hard coded time there a chances of throwing an exception)
+
+
+
+Explicit:
+        is going to wait until the web element becomes enabled.
+(element specific & excepted condition has to match)
+ ADVANTAGES:
+ - element specific, works based on the certain condition
+
+ DISADVANTAGE:
+ - we have to use explicit wait for multiple WebElements. so, we cannot use one explicit wait
+   Multiple elements.
+
+
+FluentWait:
+         also similar to WebDriverWait with more flexibility in polling time and ignores exceptions
+
+
+waits are not slow or fast , it's the webElement how they are behaving so
+     if it behaves quickly it will be fast
+     if it behaves slowly it will be slow
+
+INTERVIEW QUESTION:
+Yes -> implicit and explicit wait can be in the same script.....
+
+     Implicit wait ---> global wait --> in the start after opening the browser
+     Explicit wait ---> it is specific to an element --> before the operation to be performed on element
+
+     So, they will not interfere with each other
+
+
+     In details from Selenium website
+     https://www.selenium.dev/documentation/webdriver/waits/

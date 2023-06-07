@@ -1,4 +1,4 @@
-package classwork.class006;
+package classwork.class006waitshandles;
 
 import classwork.utils.CommonMethods;
 
