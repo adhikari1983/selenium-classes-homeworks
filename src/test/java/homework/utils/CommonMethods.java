@@ -1,11 +1,16 @@
 package homework.utils;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 
+import java.io.File;
+import java.io.IOException;
 import java.time.Duration;
 
 public class CommonMethods {
@@ -68,5 +73,18 @@ public class CommonMethods {
     public static void selectOptionByIndex(WebElement element, int index) {
         Select select = new Select(element);
         select.selectByIndex(index);
+    }
+
+    // common methods for to screen-shot and save it
+    public static void takeScreenShotAndSaveIt(String path) throws IOException {
+         //take the screenshots
+        //declare the instance
+        TakesScreenshot ts = (TakesScreenshot) driver;
+
+        // take screen-shot as output type FILE
+        File screenShot = ts.getScreenshotAs(OutputType.FILE);
+
+        // save it in your computer
+        FileUtils.copyFile(screenShot, new File(path));
     }
 }
