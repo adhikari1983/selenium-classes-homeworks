@@ -39,6 +39,8 @@ public class NavigateCommand {
         //closing the current tab
         driver.close();
 
+
+
     }
 
 }

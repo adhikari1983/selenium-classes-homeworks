@@ -1,5 +1,5 @@
 
-Linktext, partialLintext (they can only be used for <a> and it must also have some Text)
+Linktext, partialLinkText (they can only be used for <a> and it must also have some Text)
 
 
 "a" tag is also called an anchor tag, its for the link ...

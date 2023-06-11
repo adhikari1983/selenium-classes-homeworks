@@ -55,5 +55,9 @@ public class HW1FormFillUp extends CommonMethods {
         sendBtn.click();
 
         closeBrowser();
+
+        //tagname[@attribute='value']
+        //tagname[contains(@attribute, 'value')]
+        //tagname[startswith]
     }
 }

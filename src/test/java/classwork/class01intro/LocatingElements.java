@@ -7,9 +7,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class LocatingElements {
     public static void main(String[] args) throws InterruptedException {
         /**
-         * A web element refers to an individual component or element that can be found on a web page.
+         * A WebElement refers to an individual component or element that can be found on a web page.
          * i.e. anything that we see on the html page is a Web-Element.
-         * EVERY ELEMENT IN THE WEB-PAGE HAS AN UNDERLINE CODE ASSOCIATED WITH IT.
+         * EVERY ELEMENT ON THE WEB-PAGE HAS AN UNDERLINE CODE ASSOCIATED WITH IT.
          */
         //instance
         WebDriver driver = new ChromeDriver();
@@ -20,7 +20,7 @@ public class LocatingElements {
 
         //send some text to the textBox
         // find the TAGNAME & ATTRIBUTE
-        //hey WebDriver find webElement tagName input which has an id of email and send some text
+        //hey WebDriver -> find webElement tagName input which has an id of email and send some text
        //finding webElement input by id="email" . sending some text
         driver.findElement(By.id("email")).sendKeys("abc@gmail.com");
         Thread.sleep(1000);

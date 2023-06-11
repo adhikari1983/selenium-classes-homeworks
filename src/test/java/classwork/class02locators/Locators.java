@@ -22,16 +22,16 @@ public class Locators {
         //driver.findElement(By.id("txtUsername")).sendKeys("Admin");
 
         //find the element username TextBox
-        WebElement username = driver.findElement(By.id("txtUsername"));
-        username.sendKeys("Admin"); //storing the webElement to re-use it , that's all
+        WebElement userName = driver.findElement(By.id("txtUsername"));
+        userName.sendKeys("Admin"); //storing the webElement to re-use it , that's all
 
         //[just to observe] -> slow down the execution
         Thread.sleep(2000);
         //after sending the username to the textBox, clear the text box -> deleting it, just for practice
-        username.clear();                     // see, we just re-use it . L25 => implemented
+        userName.clear();                     // see, we just re-use it . L25 => implemented
 
         //sending the username again
-        username.sendKeys("Admin");
+        userName.sendKeys("Admin");
 
         //sending the password
         WebElement password = driver.findElement(By.name("txtPassword"));
