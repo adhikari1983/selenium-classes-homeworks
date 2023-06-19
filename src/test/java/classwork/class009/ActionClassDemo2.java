@@ -2,6 +2,7 @@ package classwork.class009;
 
 import classwork.utils.CommonMethods;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
@@ -25,6 +26,10 @@ public class ActionClassDemo2 extends CommonMethods {
 
 //      drag and drop action
         action.dragAndDrop(draggable, droppable).perform();
+
+
+        /** In Action class scroll works by methods,  but in     JavascriptExecutor works by script */
+        // e.g. action.scrollToElement(draggable);
     }
 
 }

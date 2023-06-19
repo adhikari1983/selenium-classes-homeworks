@@ -13,6 +13,7 @@ public class RadioButton extends CommonMethods {
         WebElement r1 = driver.findElement(By.xpath("//input[@value='Male' and @name='optradio']"));
         r1.click();
 
+
 //      check if the radio button  is selected
         boolean r1isSelected = r1.isSelected();
         System.out.println("The radio button Male is selected : " + r1isSelected);

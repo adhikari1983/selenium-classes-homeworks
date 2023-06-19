@@ -21,6 +21,7 @@ public class HW1 extends CommonMethods {
         promptBox.click();
         Thread.sleep(2000);
 
+        /** Note: don't worry if the text u send doesn't appears up in the textbox */
 //      switched to the alert & sendKeys to the textBox
         Alert promptAlert = driver.switchTo().alert();
         promptAlert.sendKeys("Kiran Adhikari");

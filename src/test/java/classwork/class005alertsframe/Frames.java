@@ -11,15 +11,16 @@ public class Frames extends CommonMethods {
         String browser = "chrome";
         openBrowserAndLaunchApplication(url, browser);
 
+        /**   working on bottom iframe with Animals DropDown*/
         //task1: print animal on screen
         //and select Baby Cat from drop down
 
-        // step: 1
+// step: 1
         //  as the webElement is inside an iframe
-        // first we need to switch to iframe
+        // first we need to switch to iframe      [ -> by index, id/name & webElement ]
         driver.switchTo().frame(1);
 
-        // find the WebElement animal
+        // find the WebElement animal             [ -> just printing the text display of a webElement ]
         WebElement animal = driver.findElement(By.xpath("//b[text()='Animals :']"));
         System.out.println(animal.getText());
 
@@ -31,13 +32,15 @@ public class Frames extends CommonMethods {
         //switch the focus to the main page
         driver.switchTo().defaultContent();
 
+        /**   working on  iframe with text box */
         //switch the focus to the containing text box
         driver.switchTo().frame("frame1");
 
         //switch to frame containing text box
         WebElement textBox = driver.findElement(By.xpath("//input"));
-        textBox.sendKeys("abcdefgh");
+        textBox.sendKeys("testing the text box ");
 
+        /**   working on bottom iframe with check box*/
         //click on the checkbox
         //switch to frame using webElement method
         WebElement frame3 = driver.findElement(By.xpath("//iframe[@id='frame3']"));

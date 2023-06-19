@@ -26,6 +26,7 @@ public class NavigateCommand {
         driver.navigate().refresh();
         Thread.sleep(1000);
 
+
         //go back to previous page
         driver.navigate().back();
         Thread.sleep(2000);

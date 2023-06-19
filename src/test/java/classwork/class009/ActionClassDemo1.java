@@ -16,6 +16,7 @@ public class ActionClassDemo1
         openBrowserAndLaunchApplication(url, browser);
 //      find the Web element that you want to hover our cursor to
         WebElement signIn = driver.findElement(By.xpath("//span[text()='Account & Lists']"));
+
 //      Action class
         Actions action = new Actions(driver);
         action.moveToElement(signIn);
