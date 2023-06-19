@@ -1,4 +1,4 @@
-package homework.personaldetails;
+package homework.personaldetail;
 
 public class Constants {
 

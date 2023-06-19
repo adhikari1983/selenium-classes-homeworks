@@ -1,4 +1,4 @@
-package homework.personaldetails;
+package homework.personaldetail;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
