@@ -10,6 +10,7 @@ import java.util.List;
 
 public class PersonalDetailTester {
     public static void main(String[] args) throws InterruptedException {
+
         // Reading the personal details from Excel sheet
         var excelSheetData = ExcelReader.reader(Constants.EXCEL_FILE_PATH, "Sheet1");
 
