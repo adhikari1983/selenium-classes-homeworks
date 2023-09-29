@@ -22,6 +22,7 @@ a parital link text you can use just a part of text, just make sure that it is u
 
 
 -----WebElement Commands---
+.click()
 .clear()
 .sendKeys()
 .getAttribute()

@@ -2,7 +2,11 @@ package classwork.class009;
 
 import classwork.utils.CommonMethods;
 import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebElement;
+
 
 import java.io.File;
 import java.io.IOException;
@@ -30,16 +34,21 @@ public class ScreenShots extends CommonMethods {
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("arguments[0].click();", loginBtn);
-*/
+       */
 
         //take the screenshots
         //declare the instance
+        // 1.TakesScreenshot comes from => org.openqa.selenium..........................
         TakesScreenshot ts = (TakesScreenshot) driver;
 
-        // take screen-shot as output type FILE
-        File screenShot = ts.getScreenshotAs(OutputType.FILE);
+        // take screen-shot as output type FILE                        // 1. & 2. comes from two library
+        // screenShotInTheFromOfFile for e.g .png, .jpeg etc...
+        File screenShotAsSourceFile = ts.getScreenshotAs(OutputType.FILE);
 
         // save it in your computer
-        FileUtils.copyFile(screenShot, new File("F:\\selenium\\Files\\screenShot.png"));
+        //2. FileUtils comes from => org.apache.commons.io.............................
+        // FileUtils.copyFile(sourceFile, DestinationFile);
+        FileUtils.copyFile(screenShotAsSourceFile, new File("F:\\selenium\\Files\\screenShot.png"));
+
     }
 }

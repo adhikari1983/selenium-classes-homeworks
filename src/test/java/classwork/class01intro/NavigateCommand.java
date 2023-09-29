@@ -38,7 +38,7 @@ public class NavigateCommand {
         //Thread.sleep(2000);
 
         //closing the current tab
-        driver.close();
+        driver.quit();
 
 
 

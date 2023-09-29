@@ -32,6 +32,8 @@ public class Locators {
 
         //sending the username again
         userName.sendKeys("Admin");
+        System.out.println("checking one of the Username textInput attribute's text \n" +
+                            userName.getAttribute("type"));;
 
         //sending the password
         WebElement password = driver.findElement(By.name("txtPassword"));

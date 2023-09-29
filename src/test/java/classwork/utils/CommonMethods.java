@@ -23,7 +23,7 @@ public class CommonMethods {
      * e.g. we are accessing "driver" everywhere associated with static modifier
      */
     public static void openBrowserAndLaunchApplication(String URL, String browser) {
-
+        // pass the browser value either as chrome or firefox from argument
         switch (browser) {
             case "chrome":
                 driver = new ChromeDriver();
@@ -44,13 +44,16 @@ public class CommonMethods {
     }
 
     //      close the browser
+    // i was confused with close VS quit in the beginning point to notice
     public static void closeBrowser() {
+     // if there isn't any browser window open and trying to close it out , then there will be an exception
+     // so this if condition will by pass, if there is no window opened
         if (driver != null) {
             driver.quit();
         }
     }
 
-    public  static void sendText(String text, WebElement element){
+    public static void sendText(String text, WebElement element) {
         element.clear();
         element.sendKeys(text);
     }
@@ -75,7 +78,13 @@ public class CommonMethods {
 
     public static void takeScreenshot(String fileName) throws IOException {
         TakesScreenshot ts = (TakesScreenshot) driver;
-        File screenShot = ts.getScreenshotAs(OutputType.FILE);
-        FileUtils.copyFile(screenShot, new File(System.getProperty("user.dir") + "\\File\\Screenshots.png"));
+        // take screen-shot as output type FILE                        // 1. & 2. comes from two library
+        // screenShotInTheFromOfFile for e.g .png, .jpeg etc...
+        File screenShotAsSourceFile = ts.getScreenshotAs(OutputType.FILE);
+        // save it in your computer
+        //2. FileUtils comes from => org.apache.commons.io.............................
+        // FileUtils.copyFile(sourceFile, DestinationFile);
+        FileUtils.copyFile(screenShotAsSourceFile, new File(System.getProperty("user.dir") +
+                                            "\\Files\\Screenshots\\" + fileName + ".png"));
     }
 }

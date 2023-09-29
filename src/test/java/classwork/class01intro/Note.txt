@@ -6,7 +6,7 @@ get() vs navigate()
 
 close() vs quit()
 -- close() will close the current tab
--- quit() will quit the whole browser
+-- quit() will quit the whole browser, including all the opened tabs as well.
 
 maximize() Vs fullscreen()
 -- maximize() will maximize the browser, and you will still be able to see url, tabs, bookmarks
@@ -23,7 +23,8 @@ maximize() Vs fullscreen()
 
     What is DOM?
     DOM stands for Document Object Model. It is the browser's
-    internal view of the webpage.
+    internal view of the webpage, in a hierarchical tree-like structure.
+
     Also called as Developer's tools, or Dev tools
     Document --> can be stored any document as pdf, excel
     Object --> any line in HTML is considered as Object
