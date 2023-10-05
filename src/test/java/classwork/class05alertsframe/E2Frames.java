@@ -3,7 +3,9 @@ package classwork.class05alertsframe;
 import homework.utils.CommonMethods;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.Wait;
 
 public class E2Frames extends CommonMethods {
     public static void main(String[] args) {
@@ -31,6 +33,8 @@ public class E2Frames extends CommonMethods {
 
         //switch the focus to the main page
         driver.switchTo().defaultContent();
+
+
 
         /**   working on  iframe with text box */
         //switch the focus to the containing text box

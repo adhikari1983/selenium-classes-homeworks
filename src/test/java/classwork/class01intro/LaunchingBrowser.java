@@ -1,5 +1,6 @@
 package classwork.class01intro;
 
+import org.openqa.selenium.Cookie;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -18,6 +19,13 @@ public class LaunchingBrowser {
 
         //use get(url) to navigate the desired url
         driver.get("https://www.google.com");
+
+
+        //can you manipulate the cookies with the help of selenium webDriver ?
+        Cookie cookie = new Cookie("cookieName", "cookieValue");
+        driver.manage().addCookie(cookie);
+        driver.manage().deleteCookieNamed("cookieName");
+
 
         //maximize the window
         driver.manage().window().maximize();
